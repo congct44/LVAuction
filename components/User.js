@@ -29,7 +29,7 @@ import {Button} from 'react-native-paper';
 
 const User = () => {
   return (
-    <WebView source={{uri: 'https://daugia.lacvietauction.vn/UserProfile'}} />
+    <WebView source={{uri: 'https://lacvietauction.vn/UserProfile'}} />
   );
 };
 

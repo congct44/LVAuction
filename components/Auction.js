@@ -31,7 +31,7 @@ const Auction = () => {
     <>
       <WebView
         source={{
-          uri: 'https://daugia.lacvietauction.vn/ListAuction?pageIndex=1',
+          uri: 'https://lacvietauction.vn/ListAuction?pageIndex=1',
         }}
       />
     </>

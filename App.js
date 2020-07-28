@@ -7,7 +7,7 @@
  */
 
 import React , {useEffect, Component} from 'react';
-import {StyleSheet , Platform } from 'react-native';
+import {StyleSheet , Platform , StatusBar } from 'react-native';
 import 'react-native-gesture-handler';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
@@ -38,15 +38,18 @@ export default class App extends Component  {
         <NavigationContainer>
           <Tab.Navigator
             initialRouteName="Home"
-            activeColor="#e91e63"
-            style={{backgroundColor: 'tomato'}}>
+            activeColor="#f0ffff"
+            style={{ color : '#ff0000'}}
+            barStyle={{backgroundColor : '#b41712'}}
+            
+            >
             <Tab.Screen
               name="Home"
               component={Home}
               options={{
                 tabBarLabel: 'Home',
-                tabBarIcon: ({color}) => (
-                  <FontAwesome name="home" color={color} size={26} />
+                tabBarIcon: () => (
+                  <FontAwesome name="home" color='#FFFFFF' size={26} />
                 ),
               }}
             />
@@ -55,8 +58,8 @@ export default class App extends Component  {
               component={Auction}
               options={{
                 tabBarLabel: 'Auction',
-                tabBarIcon: ({color}) => (
-                  <FontAwesome name="gavel" color={color} size={26} />
+                tabBarIcon: () => (
+                  <FontAwesome name="gavel" color='#FFFFFF' size={26} />
                 ),
               }}
             />
@@ -65,8 +68,8 @@ export default class App extends Component  {
               component={Notification}
               options={{
                 tabBarLabel: 'Notification',
-                tabBarIcon: ({color}) => (
-                  <FontAwesome name="bell" color={color} size={26} />
+                tabBarIcon: () => (
+                  <FontAwesome name="bell" color='#FFFFFF' size={26} />
                 ),
               }}
             />
@@ -75,8 +78,8 @@ export default class App extends Component  {
               component={User}
               options={{
                 tabBarLabel: 'User',
-                tabBarIcon: ({color}) => (
-                  <FontAwesome name="user" color={color} size={26} />
+                tabBarIcon: () => (
+                  <FontAwesome name="user" color='#FFFFFF' size={26} />
                 ),
               }}
             />
