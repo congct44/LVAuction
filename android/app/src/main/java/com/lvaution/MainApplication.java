@@ -1,4 +1,4 @@
-package com.novatic.lvauction;
+package com.wcongaugialacviet_10996819;
 
 import android.app.Application;
 import android.content.Context;
